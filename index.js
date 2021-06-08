@@ -17,8 +17,8 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = 18
+console.log(votingAge >= 18)
 
 /*
 Task 1b - Values
@@ -31,7 +31,14 @@ Do the following:
    HINT: no function required
 */
 
+let matt = 5
+let rich = 6
 
+if(rich ==6){
+  matt = (matt + rich )
+  console.log(matt)
+}
+  
 
 
 
@@ -45,7 +52,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let year = '1999'
+let wow = Number(year)
+console.log(wow)
 
 
 
@@ -58,10 +67,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b 
   }
-
+  let multiplyResult = multiply(3,4)
+console.log(multiplyResult)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,10 +84,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(year){
+    return year * 7
 }
-
+console.log(dogYears(2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -138,7 +148,7 @@ console.log(hungryDog(15,1));
 
     
 
-  }
+
 
 
 
@@ -162,11 +172,38 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let randomNumber = Math.random()
+let computerChoice
+if(randomNumber < 1/3){
+  computerChoice = 'rock';
+}else if(randomNumber >= 1/3 && randomNumber <= 2/3){
+  computerChoice = 'paper';
+}else if (randomNumber > 2/3){
+  computerChoice = 'scissors'
+}
+
 
 function game(user, computer){
-    /*add your code here*/
+    if (user === computer){
+      return 'Its a tie';
+    }else if (user==='rock' && computer==='paper'){
+      return 'you lose!';
+    }else if (user==='rock' && computer==='scissors'){
+      return 'you win!' ;
+    }else if (user==='paper' && computer==='rock'){
+      return 'you win!' ;
+    }else if (user==='paper' && computer=== 'scissors'){
+      return 'you lose!';
+    }else if (user==='scissors' && computer=== 'paper'){
+      return 'you win!' ;
+    }else if (user==='scissors' && computer=== 'rock'){
+      return 'you lose!'
+    }
+
+  
 }
   
+  console.log(game('rock',computerChoice))
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -180,10 +217,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilo){
+    return kilo * 0.6213
   }
-
+console.log(miles(5))
 
 
 //Task 5b - Feet to CM
@@ -194,10 +231,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm * 0.032
   }
- 
+ console.log(feet(30))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
