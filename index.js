@@ -108,23 +108,33 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(weight, age){
-    if(age>=1 && weight <=5){
-      return weight *0.05;
-    }else if (age >= 1 && weight >= 6 && weight <=10){
-      return weight *0.04;
-    }else if (age >=1 && weight >=11 && <=15){
-      return weight *0.03;
-    }else if (age >=1 && weight >15){
-      return weight *0.02;
-    }else if (age <1 && age >= 0.538){
-      return weight *0.04
-    }else if (age <0.583 && age >= 0.333){
-      return weight *0.05
-    }else if (age < 0.333){
-      return weight
-    }
-  
+  /*add your code here*/
+  if(age >1 && weight <= 5){
+    return weight *.05;
   }
+  else if(age >1 && weight <= 5){
+    return weight *.05;
+  }
+  else if(age >=1 && weight >= 10 && weight <=10){
+    return weight *.04;
+  }
+  else if(age >=1 && weight >= 11 && weight <=15){
+    return weight *.03;
+  }
+  else if(age >=1 && weight >= 15){
+    return weight *.02;
+  }
+  else if(age <1 &&  age >=7/12){
+    return weight *.04;
+  }
+  else if(age <7/12 &&  age >=4/12){
+    return weight *.05;
+  }
+  else if(age <4/12 &&  age >=2/12){
+    return weight *.1;
+  }
+}
+console.log(hungryDog(15,1));
 
     
 
