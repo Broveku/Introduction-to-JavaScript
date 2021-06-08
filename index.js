@@ -249,11 +249,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(startNum){
   
-  for(count = startNum; count >= 1; count--){
-    console.log( `${count} bottles of soda on the wall, ${count} bottles of soda, take one down pass it around ${count - 1} bottles of soda on the wall`)
+  for(let count = startNum;  count >= 1; count--){
+    return( `${count} bottles of soda on the wall, ${count} bottles of soda, take one down pass it around ${count - 1} bottles of soda on the wall`)
   }
 }
-console.log(annoyingSong(10))
+console.log(annoyingSong(5))
 
 
 
